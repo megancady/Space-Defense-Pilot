@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space Defense (jsPsych)</title>
+
+    <!-- jsPsych core + default CSS -->
+    <script src="https://unpkg.com/jspsych@8.2.2"></script>
+    <link
+      href="https://unpkg.com/jspsych@8.2.2/css/jspsych.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Plugins you may use -->
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.1.0"></script>
+
+    <!-- Your experiment code -->
+    <script defer src="experiment.js"></script>
+
+    <style>
+      /* ====== GLOBAL DARK THEME FIX ====== */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #000;
+        color: #fff;
+      }
+
+      /* Make sure jsPsych containers inherit white text */
+      .jspsych-display-element,
+      .jspsych-content-wrapper,
+      .jspsych-content {
+        color: #fff;
+      }
+
+      /* Optional: keep content from being super narrow */
+      .jspsych-content {
+        max-width: 980px;
+      }
+
+      /* Buttons and inputs readable on dark background */
+      button {
+        background: #222;
+        color: #fff;
+        border: 1px solid #555;
+        padding: 10px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:disabled {
+        opacity: 0.55;
+        cursor: not-allowed;
+      }
+
+      input {
+        background: #111;
+        color: #fff;
+        border: 1px solid #555;
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      /* Tables + links */
+      table {
+        color: #fff;
+        border-color: #555;
+      }
+      th,
+      td {
+        border-color: #555;
+      }
+      a {
+        color: #8ab4ff;
+      }
+
+      /* Canvas border fits dark theme */
+      canvas {
+        border: 1px solid #222;
+        border-radius: 12px;
+        touch-action: none;
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>
